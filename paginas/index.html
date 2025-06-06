@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ingenio Azucarero - Página Principal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            width: 90%;
+        }
+
+        .team-logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .team-name {
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .member-card {
+            background: white;
+            border: none;
+            padding: 25px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #2c3e50;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .member-card:hover:before {
+            left: 100%;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .member-name {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .member-role {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .members-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="team-logo">DW</div>
+        <h1>Bienvenidos al <span class="team-name">Equipo "El Ingenio Azucarero"</span></h1>
+        <p class="subtitle">Sistema Web Colaborativo</p>
+        
+        <div class="members-grid">
+            <a href="perfil-integrante1.html" class="member-card">
+                <div class="member-avatar">I1</div>
+                <div class="member-name">Andrés Yismael Díaz Hernández</div>
+            </a>
+            
+            <a href="perfil-integrante2.html" class="member-card">
+                <div class="member-avatar">I2</div>
+                <div class="member-name">Leonardo Daniel Dorantes Castañeda</div>
+            </a>
+            
+            <a href="perfil-integrante3.html" class="member-card">
+                <div class="member-avatar">I3</div>
+                <div class="member-name">Brandon Alfredo Hernández Rodríguez</div>
+            </a>
+            
+            <a href="perfil-integrante4.html" class="member-card">
+                <div class="member-avatar">I4</div>
+                <div class="member-name">Vulmaro Alberto Martínez Verdugo</div>
+            </a>
+            
+            <a href="perfil-integrante5.html" class="member-card">
+                <div class="member-avatar">I5</div>
+                <div class="member-name">Martin Ortega Montes</div>
+            </a>
+            
+            <a href="perfil-integrante6.html" class="member-card">
+                <div class="member-avatar">I6</div>
+                <div class="member-name">Anett Yomali Vera Carbajal</div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Proyecto desarrollado con GitHub y Jira | UTEZ 2025</p>
+        </div>
+    </div>
+</body>
+</html>
