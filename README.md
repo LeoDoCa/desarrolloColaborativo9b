@@ -16,6 +16,7 @@ Este proyecto consiste en un sitio web estático compuesto por 7 páginas HTML. 
 No se utilizan lenguajes del lado del servidor ni bases de datos; todo el contenido es HTML puro (puede incluir también CSS o JavaScript si aplica).
 
 ## Estructura de Carpetas
+```bash
 desarrolloColaborativo9b/
 ├── paginas/ # Carpeta que contiene todas las páginas HTML
 │ ├── index.html
