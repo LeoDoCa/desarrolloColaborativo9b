@@ -27,6 +27,7 @@ desarrolloColaborativo9b/
 │ ├── vulmaro_profile.html
 │ └── ayuda.html
 └── README.md # Archivo con información del proyecto
+```
 
 ## Cómo Clonar y Correr el Proyecto
 
