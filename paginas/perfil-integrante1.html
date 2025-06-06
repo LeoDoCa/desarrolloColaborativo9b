@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YISMAEL DÍAZ - Perfil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            font-size: 14px;
+        }
+
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 0 auto 20px;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            /* Aquí cada integrante puede agregar su imagen */
+            background-image: url('ruta-a-tu-imagen.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .profile-name {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .profile-career {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 25px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .hobby-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .hobby-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .hobby-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            line-height: 40px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .profile-name {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .hobbies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-button">← Volver al equipo</a>
+            
+            <!-- PERSONALIZAR: Agregar tu imagen aquí -->
+            <div class="profile-image">
+                <!-- Si no tienes imagen, puedes usar tus iniciales -->
+                TU
+            </div>
+            
+            <!-- PERSONALIZAR: Cambiar por tu nombre completo -->
+            <h1 class="profile-name">Andrés Yismael Díaz Hernández</h1>
+            
+            <!-- PERSONALIZAR: Cambiar por tu carrera -->
+            <p class="profile-career">Ingeniería en Desarrollo y Gestión de Software</p>
+        </div>
+
+        <div class="content">
+            <!-- Sección de Información Personal -->
+            <div class="section">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="info-card">
+                    <p>Soy un chico honesto, algo serio, pero me considero amigable. Me gusta la tecnología, la música y cocinar y pasear con mis amigos. Me gusta conocer gente de varias partes del mundo a través de los idiomas.</p>
+                </div>
+            </div>
+
+            <!-- Sección de Hobbies e Intereses -->
+            <div class="section">
+                <h2 class="section-title">Hobbies e Intereses</h2>
+                <div class="hobbies-grid">
+                    <!-- PERSONALIZAR: Cambiar por tus hobbies reales -->
+                    <div class="hobby-item">
+                        <div class="hobby-icon">🎮</div>
+                        <h3>Idiomas</h3>
+                        <p>Que la racha de Duolingo sea eterna</p>
+                    </div>
+                    
+                    <div class="hobby-item">
+                        <div class="hobby-icon">📚</div>
+                        <h3>Lectura</h3>
+                        <p>Libros de tecnología y ciencia ficción</p>
+                    </div>
+                    
+                    <div class="hobby-item">
+                        <div class="hobby-icon">🎵</div>
+                        <h3>Música</h3>
+                        <p>Estoy aprendiendo a tocar el violín</p>
+                    </div>
+                    
+                    <div class="hobby-item">
+                        <div class="hobby-icon">⚽</div>
+                        <h3>Deportes</h3>
+                        <p>Tae Kwon Do, senderismo, patinaje</p>
+                    </div>
+                    
+                    <!-- Agregar más hobbies según necesites -->
+                </div>
+            </div>
+
+            <!-- Sección de Habilidades Técnicas -->
+            <div class="section">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="info-card">
+                    <!-- PERSONALIZAR: Agregar tus habilidades -->
+                    <p><strong>Lenguajes de Programación:</strong> Java, Python, JavaScript, C#</p>
+                    <p><strong>Tecnologías Web:</strong> HTML, CSS, React, Node.js</p>
+                    <p><strong>Bases de Datos:</strong> MySQL, MongoDB</p>
+                    <p><strong>Herramientas:</strong> Git, Docker, VS Code</p>
+                </div>
+            </div>
+
+            <!-- Sección de Contacto -->
+            <div class="section">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-info">
+                    <!-- PERSONALIZAR: Agregar tu información de contacto real -->
+                    <p><strong>Email:</strong> YismaelDiazH@gmail.com</p>
+                    <p><strong>GitHub:</strong> @YismaelDiazH</p>
+                    
+                    <div class="social-links">
+                        <!-- PERSONALIZAR: Agregar tus redes sociales -->
+                        <a href="https://www.instagram.com/yisma_eld/profilecard/?igsh=ZWg1dTJod3BmdDl2
+
+" class="social-link">📧Insta</a>
+                        <a href="#" class="social-link">💼Linkedin</a>
+                        <a href="#" class="social-link">🐙Snapchat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
